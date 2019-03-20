@@ -1,0 +1,76 @@
+
+header {
+    background-image: url(../images/background-image.png);
+    height: 729px;
+    width: 100%;
+    background-size: cover;
+}
+.navbar {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    height: 60px;
+    width: 100%;
+}
+
+.nav-top {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 230px;
+    li {
+        display: inline-block;
+        padding: 0 40px;
+        font-size: 14px;
+        line-height: 41px;
+        color: $white-color;
+        font-family: $page-font;
+        font-weight: 400;
+        text-align: center;
+    }
+}
+
+.logo-gold {
+    position: absolute;
+    left: 237px;
+}
+
+.welcome {
+    font-size: 40px;
+    letter-spacing: -1px;
+    color: $white-color;
+    font-family: $page-font;
+    font-weight: 400;
+    text-align: center;
+    font-style: italic;
+    padding-top: 145px;
+    text-transform: capitalize;
+}
+
+.meet {
+    font-size: 75px;
+    letter-spacing: -2px;
+    color: $white-color;
+    font-family: $page-font;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.btn {
+    width: 240px;
+    height: 65px;
+    border-radius: 3px;
+    background-color: #fed136;
+    font-size: 18px;
+    color: $white-color;
+    font-family: $page-font;
+    font-weight: 700;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}

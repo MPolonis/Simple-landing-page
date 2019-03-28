@@ -27,7 +27,7 @@ header {
         line-height: 41px;
         color: $white-color;
         font-family: $page-font;
-        font-weight: 400;
+        font-weight: $normal-thickness-of-font;
         text-align: center;
     }
 }
@@ -42,7 +42,7 @@ header {
     letter-spacing: -1px;
     color: $white-color;
     font-family: $page-font;
-    font-weight: 400;
+    font-weight: $normal-thickness-of-font;
     text-align: center;
     font-style: italic;
     padding-top: 145px;
@@ -54,7 +54,7 @@ header {
     letter-spacing: -2px;
     color: $white-color;
     font-family: $page-font;
-    font-weight: 700;
+    font-weight: $thick-font;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 50px;
@@ -64,11 +64,11 @@ header {
     width: 240px;
     height: 65px;
     border-radius: 3px;
-    background-color: #fed136;
+    background-color: $icons-buttons-color;
     font-size: 18px;
     color: $white-color;
     font-family: $page-font;
-    font-weight: 700;
+    font-weight: $thick-font;
     margin: 0 auto;
     display: flex;
     justify-content: center;

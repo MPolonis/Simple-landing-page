@@ -1,8 +1,8 @@
 .services {
-    height: 550px;
     width: 100%;
     font-family: $page-font;
     text-align: center;
+    padding-bottom: 120px;
 }
 
 .service-header {
@@ -15,7 +15,10 @@
         margin-bottom: 0;
     }
     p {
-        color: #999;
+        font-size: 16px;
+        font-weight: $normal-thickness-of-font;
+        font-style: italic;
+        color: #777;
         margin-top: 8px;
         margin-bottom: 82px;
     }
@@ -61,12 +64,13 @@
 
 .service-description {
     width: 279px;
-height: 58px;
-font-size: $page-font-size;
-letter-spacing: 0px;
-color: #777777;
-font-family: $font-roboto;
-font-weight: $normal-thickness-of-font;
-text-align: center;
-margin: 0 auto;
+    height: 58px;
+    font-size: $page-font-size;
+    letter-spacing: 0px;
+    color: #777777;
+    font-family: $font-roboto;
+    font-weight: $normal-thickness-of-font;
+    text-align: center;
+    margin: 0 auto;
 }
+

@@ -924,7 +924,8 @@ header {
   font-style: italic;
   color: #777;
   margin-top: 8px;
-  padding-bottom: 77px;
+  margin-bottom: 0;
+  padding-bottom: 84px;
 }
 
 .circle-photo {
@@ -942,6 +943,8 @@ header {
   display: flex;
   -ms-flex-pack: start;
       justify-content: flex-start;
+  padding-bottom: 99px;
+  padding-left: 25px;
 }
 
 .right-circle {
@@ -949,5 +952,59 @@ header {
   display: flex;
   -ms-flex-pack: end;
       justify-content: flex-end;
+  padding-bottom: 99px;
+  padding-right: 25px;
+}
+
+.text-left {
+  text-align: right;
+}
+
+.text-right {
+  text-align: left;
+}
+
+.text-left h1,
+.text-left h2,
+.text-right h1,
+.text-right h2 {
+  margin-top: 0;
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: #222222;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+.text-left p,
+.text-right p {
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #777777;
+  font-family: "Roboto Slab";
+  font-weight: 400;
+}
+
+.next-story {
+  width: 170px;
+  height: 170px;
+  border: 7px solid #f1f1f1;
+  border-radius: 84%;
+  margin: 0 3px;
+  cursor: pointer;
+  background-color: #fed136;
+  margin: 0 auto;
+}
+
+.next-story h1 {
+  margin-top: 30px;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  word-spacing: 9999999px;
+  line-height: 1.5em;
 }
 /*# sourceMappingURL=style.css.map */

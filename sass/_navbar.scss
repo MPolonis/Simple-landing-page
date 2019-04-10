@@ -29,6 +29,10 @@ header {
         font-family: $page-font;
         font-weight: $normal-thickness-of-font;
         text-align: center;
+        cursor: pointer;
+        &:hover {
+            color: $icons-buttons-color;
+        }
     }
 }
 
@@ -73,4 +77,9 @@ header {
     display: flex;
     justify-content: center;
     align-content: center;
+    &:hover {
+        background-color: $white-color;
+        color: $icons-buttons-color;
+        cursor: pointer;
+    }
 }

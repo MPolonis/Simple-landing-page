@@ -1,0 +1,92 @@
+.team {
+    background-color: #f9f9f9;
+    padding-bottom: 120px;
+    padding: 0 280px;
+}
+
+.team-header {
+    text-align: center;
+    font-family: $page-font;
+    h1 {
+        font-weight: $thick-font;
+        text-transform: uppercase;
+        font-size: 40px;
+        padding-top: 120px;
+        margin-bottom: 0;
+        color: #222;
+        margin-top: 0;
+    }
+    p {
+        font-size: 16px;
+        font-weight: $normal-thickness-of-font;
+        font-style: italic;
+        color: #777;
+        margin-top: 8px;
+        margin-bottom: 0;
+        padding-bottom: 84px;
+    }
+}
+
+.circle-team {
+    width: 221px;
+    height: 221px;
+    border-radius: 110px;
+    background-color: #000;
+    margin: 0 auto;
+}
+
+.employee {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.member {
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 50px;
+    color: #222;
+    font-family: $page-font;
+    font-weight: $thick-font;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.post {
+    font-size: 16px;
+    font-weight: $normal-thickness-of-font;
+    color: #777;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.icon-btn {
+	width: 41px;
+	height: 41px;
+	border: 0;
+	color: #FFF;
+	border-radius: 20px;
+    border: 3px solid #222;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    font-size: 19px;
+    &:hover {
+        background-color: #222;
+    }
+}
+
+.twitter,
+.facebook,
+.pinterest,
+.google {
+    color: #222;
+    &:hover {
+        color: #f9f9f9;
+    }
+}
+
+.team-description {
+    @extend .team-header;
+    font-family: $font-roboto;
+    font-weight: $normal-thickness-of-font;
+    padding-bottom: 120px;
+}

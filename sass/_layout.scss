@@ -2,22 +2,10 @@
 	box-sizing: border-box;
 }
 
-// .container {
-// 	width: 100%;
-// 	max-width: 1920px;
-// 	margin: 0 auto;
-// 	background-color: $header-hover-color;
-// }
-// .position {
-// 	display: flex;
-// 	flex-wrap: wrap;
-// }
-// .container-fluid {
-// 	width: 100%;
-// 	padding-left: 15px;
-// 	padding-right: 15px;
-// 	padding-bottom: 21px;
-// }
+body {
+	max-width: 1423px;
+	margin: 0 auto;
+}
 
 .row {
 	display: flex;

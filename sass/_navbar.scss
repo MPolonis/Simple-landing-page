@@ -22,7 +22,7 @@ header {
     padding-right: 230px;
     li {
         display: inline-block;
-        padding: 0 40px;
+        padding: 0 20px;
         font-size: 14px;
         line-height: 41px;
         color: $white-color;
@@ -76,10 +76,50 @@ header {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    text-transform: uppercase;
     align-content: center;
     &:hover {
         background-color: $white-color;
         color: $icons-buttons-color;
         cursor: pointer;
+    }
+}
+
+
+@media(max-width: 767px) {
+	.logo-gold {
+        left: 80px;
+    }
+}
+
+@media(min-width: 768px) {
+    .nav-top {
+        padding-right: 130px;
+    }
+
+    .logo-gold {
+        left: 80px;
+    }
+	
+	
+}
+
+@media(min-width: 992px) {
+    .nav-top {
+        padding-right: 230px;
+    }
+    .logo-gold {
+        left: 180px;
+    }
+	
+}
+
+@media(min-width: 1650px) {
+	.nav-top {
+        padding-right: 530px;
+    }
+
+    .logo-gold {
+        left: 480px;
     }
 }

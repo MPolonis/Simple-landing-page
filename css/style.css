@@ -346,6 +346,11 @@ template {
   box-sizing: border-box;
 }
 
+body {
+  max-width: 1423px;
+  margin: 0 auto;
+}
+
 .row {
   display: -ms-flexbox;
   display: flex;
@@ -705,7 +710,7 @@ header {
 
 .nav-top li {
   display: inline-block;
-  padding: 0 40px;
+  padding: 0 20px;
   font-size: 14px;
   line-height: 41px;
   color: #fff;
@@ -761,6 +766,7 @@ header {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
+  text-transform: uppercase;
   -ms-flex-line-pack: center;
       align-content: center;
 }
@@ -769,6 +775,39 @@ header {
   background-color: #fff;
   color: #fed136;
   cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .logo-gold {
+    left: 80px;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-top {
+    padding-right: 130px;
+  }
+  .logo-gold {
+    left: 80px;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-top {
+    padding-right: 230px;
+  }
+  .logo-gold {
+    left: 180px;
+  }
+}
+
+@media (min-width: 1650px) {
+  .nav-top {
+    padding-right: 530px;
+  }
+  .logo-gold {
+    left: 480px;
+  }
 }
 
 .services {
@@ -1091,36 +1130,6 @@ header {
   margin-top: 0;
 }
 
-.icon-btn {
-  width: 41px;
-  height: 41px;
-  border: 0;
-  color: #FFF;
-  border-radius: 20px;
-  border: 3px solid #222;
-  background-color: #f9f9f9;
-  cursor: pointer;
-  font-size: 19px;
-}
-
-.icon-btn:hover {
-  background-color: #222;
-}
-
-.twitter,
-.facebook,
-.pinterest,
-.google {
-  color: #222;
-}
-
-.twitter:hover,
-.facebook:hover,
-.pinterest:hover,
-.google:hover {
-  color: #f9f9f9;
-}
-
 .team-description {
   font-family: "Roboto Slab", serif;
   font-weight: 400;
@@ -1137,11 +1146,10 @@ header {
 }
 
 .contact {
-  background-color: #000;
+  background-color: #222;
   background-image: url("../images/Map Image.png");
   background-repeat: no-repeat;
   background-position: 700px 130px;
-  height: 600px;
 }
 
 .contact .contact-header {
@@ -1179,7 +1187,7 @@ header {
   padding: 0;
 }
 
-.form-contact input {
+.placeholder-style {
   width: 455px;
   height: 50px;
   border-radius: 2px;
@@ -1193,6 +1201,7 @@ header {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   padding-left: 20px;
+  text-transform: uppercase;
 }
 
 .textarea-contact {
@@ -1200,5 +1209,73 @@ header {
   padding-top: 10px;
   width: 455px;
   height: 210px;
+}
+
+.btn-message {
+  margin-bottom: 110px;
+}
+
+.icon-btn {
+  width: 41px;
+  height: 41px;
+  border: 0;
+  color: #FFF;
+  border-radius: 20px;
+  border: 3px solid #222;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  font-size: 19px;
+}
+
+.icon-btn:hover {
+  background-color: #222;
+}
+
+.twitter,
+.facebook,
+.pinterest,
+.google {
+  color: #222;
+}
+
+.twitter:hover,
+.facebook:hover,
+.pinterest:hover,
+.google:hover {
+  color: #f9f9f9;
+}
+
+.twitter-footer,
+.facebook-footer,
+.pinterest-footer,
+.google-footer {
+  color: #f9f9f9;
+  background-color: #222;
+}
+
+.twitter-footer:hover,
+.facebook-footer:hover,
+.pinterest-footer:hover,
+.google-footer:hover {
+  color: #222;
+  background-color: #f9f9f9;
+}
+
+.footer {
+  margin: 20px 0;
+}
+
+.copyright {
+  font-size: 14px;
+  letter-spacing: 0px;
+  line-height: 22px;
+  color: #555;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin-left: 230px;
+}
+
+.social-icons {
+  padding-left: 20px;
 }
 /*# sourceMappingURL=style.css.map */

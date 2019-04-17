@@ -346,11 +346,6 @@ template {
   box-sizing: border-box;
 }
 
-body {
-  max-width: 1423px;
-  margin: 0 auto;
-}
-
 .row {
   display: -ms-flexbox;
   display: flex;
@@ -556,7 +551,7 @@ body {
   }
 }
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   .col-lg-1 {
     -ms-flex: 0 0 8.33333%;
         flex: 0 0 8.33333%;
@@ -616,6 +611,11 @@ body {
     -ms-flex: 0 0 100%;
         flex: 0 0 100%;
     max-width: 100%;
+  }
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -680,12 +680,15 @@ body {
         flex: 0 0 100%;
     max-width: 100%;
   }
+  body {
+    max-width: 1423px;
+    margin: 0 auto;
+  }
 }
 
 header {
   background-image: url(../images/background-image.png);
   height: 729px;
-  width: 100%;
   background-size: cover;
 }
 
@@ -895,6 +898,12 @@ header {
   margin: 0 auto;
 }
 
+@media (max-width: 992px) {
+  .particular-service {
+    padding-bottom: 40px;
+  }
+}
+
 .portfolio {
   background-color: #f7f7f7;
   padding-bottom: 120px;
@@ -957,6 +966,19 @@ header {
   width: 290px;
 }
 
+.projects-smaller-screens {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .projects {
+    display: none;
+  }
+  .projects-smaller-screens {
+    display: inline;
+  }
+}
+
 .about {
   text-align: center;
   padding-bottom: 120px;
@@ -997,22 +1019,8 @@ header {
   background-color: #fff;
 }
 
-.left-circle {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
+.circle {
   padding-bottom: 99px;
-  padding-left: 25px;
-}
-
-.right-circle {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
-  padding-bottom: 99px;
-  padding-right: 25px;
 }
 
 .text-left {
@@ -1049,7 +1057,6 @@ header {
   height: 170px;
   border: 7px solid #f1f1f1;
   border-radius: 84%;
-  margin: 0 3px;
   cursor: pointer;
   background-color: #fed136;
   margin: 0 auto;
@@ -1065,6 +1072,19 @@ header {
   text-transform: uppercase;
   word-spacing: 9999999px;
   line-height: 1.5em;
+}
+
+.about-lower-screens {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .about-big-screens {
+    display: none;
+  }
+  .about-lower-screens {
+    display: inline;
+  }
 }
 
 .team {

@@ -33,17 +33,9 @@
     cursor: pointer;
     background-color: $white-color;
 }
-.left-circle{
-    display: flex;
-    justify-content: flex-start;
+
+.circle{
     padding-bottom: 99px;
-    padding-left: 25px;
-}
-.right-circle{
-    display: flex;
-    justify-content: flex-end;
-    padding-bottom: 99px;
-    padding-right: 25px;
 }
 
 .text-left {
@@ -79,7 +71,6 @@
 	height: 170px;
 	border: 7px solid #f1f1f1;
 	border-radius: 84%;
-    margin: 0 3px;
     cursor: pointer;
     background-color: $icons-buttons-color;
     margin: 0 auto;
@@ -94,4 +85,29 @@
         word-spacing: 9999999px;
         line-height: 1.5em;
     }
+}
+
+.about-lower-screens {
+    display: none;
+}
+
+@media(max-width: 767px) {
+	
+}
+
+@media(min-width: 768px) {
+	
+}
+
+@media(max-width: 992px) {
+    .about-big-screens {
+        display: none;
+    }
+    .about-lower-screens {
+        display: inline;
+    }
+}
+
+@media(min-width: 1200px) {
+	
 }

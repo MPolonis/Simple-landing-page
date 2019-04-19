@@ -1,7 +1,61 @@
 .firms {
-    padding: 60px 0;
+    padding: 60px 240px;
     text-align: center;
     img {
         padding: 0 15px;
+    }
+}
+
+.firms-mobile {
+    display: none;
+    .firms-logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        img {
+            padding: 0 30px;
+        }
+    }
+}
+.envato {
+    width: 191px;
+    height: 30px;
+}
+
+.wordpress {
+    width: 216px;
+    height: 42px;
+}
+
+.tuts {
+    width: 161px;
+    height: 41px;
+}
+
+.microlancer {
+    width: 197px;
+    height: 42px;
+}
+            
+@media(max-width: 767px) {
+	
+}
+
+@media(min-width: 768px) {
+	
+}
+
+@media(max-width: 1050px) {
+    .firms {
+        display: none;
+    }
+    .firms-mobile {
+        display: inline;
+    }
+}
+
+@media(max-width: 1200px) {
+	.firms {
+        padding: 0 150px;
     }
 }

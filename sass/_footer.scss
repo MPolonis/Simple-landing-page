@@ -16,3 +16,25 @@
 .social-icons {
     padding-left: 20px;
 }
+
+@media(max-width: 767px) {
+}
+
+@media(min-width: 768px) {
+	
+}
+
+@media(max-width: 992px) {
+    .copyright {
+        text-align: center;
+        margin: 20px auto;
+    }
+    .social-icons {
+    padding-bottom: 20px;
+    padding-left: 0;
+}
+}
+
+@media(min-width: 1200px) {
+	
+}

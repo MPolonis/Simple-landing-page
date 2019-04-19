@@ -67,7 +67,16 @@
 }
 
 @media(max-width: 767px) {
-	
+    .team-header {
+        h1 {
+            font-size: 32px;
+            padding: 0 20px;
+        }
+    }
+	.circle-team {
+        height: 180px;
+        width: 180px;
+    }
 }
 
 @media(min-width: 768px) {

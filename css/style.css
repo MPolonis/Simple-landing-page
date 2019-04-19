@@ -755,52 +755,48 @@ header {
   margin-bottom: 50px;
 }
 
-.btn {
-  width: 240px;
-  height: 65px;
-  border-radius: 3px;
-  background-color: #fed136;
-  font-size: 18px;
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  margin: 0 auto;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  text-transform: uppercase;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-.btn:hover {
-  background-color: #fff;
-  color: #fed136;
-  cursor: pointer;
-}
-
 @media (max-width: 767px) {
+  header {
+    background-position: top;
+  }
   .logo-gold {
-    left: 80px;
+    left: 40px;
+  }
+  .welcome {
+    padding-top: 100px;
+  }
+  .nav-top li {
+    display: none;
   }
 }
 
 @media (min-width: 768px) {
   .nav-top {
-    padding-right: 130px;
+    padding-right: 40px;
   }
   .logo-gold {
     left: 80px;
   }
 }
 
-@media (min-width: 992px) {
-  .nav-top {
-    padding-right: 230px;
+@media (max-width: 992px) {
+  .welcome {
+    font-size: 32px;
+    margin: 0 20px;
+    padding-top: 130px;
   }
+  .meet {
+    font-size: 40px;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 993px) {
   .logo-gold {
     left: 180px;
+  }
+  .nav-top {
+    padding-right: 230px;
   }
 }
 
@@ -1169,6 +1165,17 @@ header {
   padding-bottom: 120px;
 }
 
+@media (max-width: 767px) {
+  .team-header h1, .team-description h1 {
+    font-size: 32px;
+    padding: 0 20px;
+  }
+  .circle-team {
+    height: 180px;
+    width: 180px;
+  }
+}
+
 @media (max-width: 992px) {
   .team {
     padding: 0;
@@ -1176,12 +1183,63 @@ header {
 }
 
 .firms {
-  padding: 60px 0;
+  padding: 60px 240px;
   text-align: center;
 }
 
 .firms img {
   padding: 0 15px;
+}
+
+.firms-mobile {
+  display: none;
+}
+
+.firms-mobile .firms-logo {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-bottom: 30px;
+}
+
+.firms-mobile .firms-logo img {
+  padding: 0 30px;
+}
+
+.envato {
+  width: 191px;
+  height: 30px;
+}
+
+.wordpress {
+  width: 216px;
+  height: 42px;
+}
+
+.tuts {
+  width: 161px;
+  height: 41px;
+}
+
+.microlancer {
+  width: 197px;
+  height: 42px;
+}
+
+@media (max-width: 1050px) {
+  .firms {
+    display: none;
+  }
+  .firms-mobile {
+    display: inline;
+  }
+}
+
+@media (max-width: 1200px) {
+  .firms {
+    padding: 0 150px;
+  }
 }
 
 .contact {
@@ -1216,8 +1274,12 @@ header {
   padding-bottom: 84px;
 }
 
-.message {
-  text-align: center;
+.info-area {
+  text-align: right;
+}
+
+.message-area {
+  text-align: left;
 }
 
 .form-contact {
@@ -1250,8 +1312,26 @@ header {
   height: 210px;
 }
 
-.btn-message {
-  margin-bottom: 110px;
+@media (max-width: 992px) {
+  .contact {
+    background-position: 0 130px;
+  }
+  .contact .contact-header h1 {
+    font-size: 32px;
+    padding-top: 60px;
+  }
+  .placeholder-style {
+    margin-right: 0;
+    width: 300px;
+    height: 30px;
+  }
+  .textarea-contact {
+    height: 150px;
+  }
+  .info-area,
+  .message-area {
+    text-align: center;
+  }
 }
 
 .icon-btn {
@@ -1300,6 +1380,13 @@ header {
   background-color: #f9f9f9;
 }
 
+@media (max-width: 992px) {
+  .social-icons {
+    text-align: center;
+    padding: 0;
+  }
+}
+
 .footer {
   margin: 20px 0;
 }
@@ -1316,5 +1403,62 @@ header {
 
 .social-icons {
   padding-left: 20px;
+}
+
+@media (max-width: 992px) {
+  .copyright {
+    text-align: center;
+    margin: 20px auto;
+  }
+  .social-icons {
+    padding-bottom: 20px;
+    padding-left: 0;
+  }
+}
+
+.btn {
+  width: 240px;
+  height: 65px;
+  border-radius: 3px;
+  background-color: #fed136;
+  font-size: 18px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  text-transform: uppercase;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #fed136;
+  cursor: pointer;
+}
+
+.btn-message {
+  padding-bottom: 100px;
+}
+
+@media (max-width: 767px) {
+  .btn {
+    height: 40px;
+  }
+  .btn-message {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .team {
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

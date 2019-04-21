@@ -10,8 +10,8 @@
         h1 {
             font-weight: $thick-font;
             text-transform: uppercase;
-            font-size: 40px;
-            padding-top: 120px;
+            font-size: $paragraph-name;
+            padding-top: $padding-top;
             margin-bottom: 0;
             color: $white-color;
             margin-top: 0;
@@ -79,8 +79,8 @@
         background-position: 0 130px;
         .contact-header {
             h1 {
-                font-size: 32px;
-                padding-top: 60px;
+                font-size: $paragraph-name-small-screens;
+                padding-top: $padding-top-small-screens;
             }
         }   
     }

@@ -10,22 +10,52 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
-
-        <header>
+        <header class="menu-on-normal-screens">
             <nav class="navbar">
                 <ul class="nav-top">
                     <img src="images/Logo.png" class="logo-gold">
-                    <li>Home</li>
-                    <li>Services</li>
-                    <li>Portfolio</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
                 <h1 class="welcome">Welcome to our studio!</h1>
                 <p class="meet">it's nice to meet you</p>
                 <button class="btn">Tell me more</button>
             </nav>
         </header>
+        <header class="menu-bar-mobile">
+            <nav class="container">
+                <img src="images/Logo.png" class="logo-gold-mobile">
+                <a href="#" id="hamburger-on-mobile">
+                    <svg class="icon-hamburger" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path
+                        d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z" />
+                    </svg>
+                </a>
+                <h1 class="welcome">Welcome to our studio!</h1>
+                <p class="meet">it's nice to meet you</p>
+                <button class="btn">Tell me more</button>
+            </nav>
+        </header>
+        <div class="sidebar" id="toggle-menu">
+            <ul>
+                <a href="#" id="hamburger-toggle">
+                    <svg class="icon-hamburger-toggle" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path
+                            d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z" />
+                    </svg>
+                </a>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
         <section class="services">
             <div class="service-header">
                 <h1>Services</h1>
@@ -405,6 +435,6 @@
         </section>
 
 
-
+        <script src="app.js"></script>
     </body>
 </html>

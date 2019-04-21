@@ -1,6 +1,6 @@
 .portfolio {
     background-color: #f7f7f7;
-    padding-bottom: 120px;
+    padding-bottom: $padding-bottom;
 }
 .portfolio-header { 
     text-align: center;
@@ -8,7 +8,7 @@
     h1 {
         font-weight: $thick-font;
         text-transform: uppercase;
-        font-size: 40px;
+        font-size: $paragraph-name;
         padding-top: 120px;
         margin-bottom: 0;
         color: #222;
@@ -52,6 +52,13 @@
     }
 }
 
+.gallery {
+    &:hover {
+        cursor: pointer;
+        opacity: 0.7;
+    }
+}
+
 .projects-smaller-screens {
     display: none;
 }
@@ -65,6 +72,18 @@
 }
 
 @media(max-width: 992px) {
+    .portfolio {
+        padding-bottom: $padding-bottom-small-screens;
+    }
+    .portfolio-header {
+        h1 {
+            font-size: $paragraph-name-small-screens;
+            padding-top: 60px;
+        }
+        p {
+            padding-bottom: 0;
+        }
+    }
     .projects {
         display: none;
     }

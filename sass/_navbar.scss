@@ -1,5 +1,6 @@
 
-header {
+.menu-on-normal-screens,
+.menu-bar-mobile {
     background-image: url(../images/background-image.png);
     height: 729px;
     background-size: cover;
@@ -19,7 +20,7 @@ header {
     display: flex;
     justify-content: flex-end;
     padding-right: 230px;
-    li {
+    li a {
         display: inline-block;
         padding: 0 20px;
         font-size: 14px;
@@ -28,6 +29,7 @@ header {
         font-family: $page-font;
         font-weight: $normal-thickness-of-font;
         text-align: center;
+        text-decoration: none;
         cursor: pointer;
         &:hover {
             color: $icons-buttons-color;
@@ -63,8 +65,76 @@ header {
     margin-bottom: 50px;
 }
 
+.menu-bar-mobile {
+  display: none;
+}
+
+.logo-gold-mobile {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+#hamburger-on-mobile {
+    position: absolute;
+    top: 40px;
+    right: 10%;
+}
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: #8C8584;
+    display: none;
+    z-index: 9999;
+
+    ul {
+        font-size: 22px;
+        text-align: center;
+        margin: 0;
+        padding: 40px 0;
+        list-style: none;
+        a  {
+            text-decoration: none;
+            color: $white-color;
+            &:hover {
+                color: $icons-buttons-color;
+            }
+        }
+    }
+}
+
+.icon-hamburger {
+  fill: $white-color;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+
+.icon-hamburger-toggle {
+  fill: $icons-buttons-color;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+
+.active {
+  display: inline-block;
+}
 
 @media(max-width: 767px) {
+    .menu-on-normal-screens {
+        display: none;
+    }
+    .menu-bar-mobile {
+        display: block;
+    }
     header {
         background-position: top;
     }

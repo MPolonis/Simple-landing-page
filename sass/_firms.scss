@@ -52,6 +52,9 @@
     .firms-mobile {
         display: inline;
     }
+    .firms-logo:first-child {
+        padding-top: $padding-top-small-screens;
+    }
 }
 
 @media(max-width: 1200px) {

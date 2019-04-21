@@ -2,7 +2,7 @@
     width: 100%;
     font-family: $page-font;
     text-align: center;
-    padding-bottom: 120px;
+    padding-bottom: $padding-bottom;
 }
 
 .service-header {
@@ -11,7 +11,7 @@
     h1 {
         font-weight: $thick-font;
         text-transform: uppercase;
-        font-size: 40px;
+        font-size: $paragraph-name;
         margin-bottom: 0;
     }
     p {
@@ -82,6 +82,9 @@
 }
 
 @media(max-width: 767px) {
+    .services {
+        padding-bottom: $padding-bottom-small-screens;
+    }
 	
 }
 
@@ -93,4 +96,22 @@
 	.particular-service {
         padding-bottom: 40px;
     }
+    .particular-service:last-child {
+        padding-bottom: 0;
+    }
+    .services {
+        padding-bottom: 60px;
+    }
+    .service-header {
+        h1 {
+            font-size: $paragraph-name-small-screens;
+        }
+    }
 }
+
+@media(min-width: 1300px) {
+    .services {
+        padding: 0 200px 120px 200px;
+    }
+}
+

@@ -86,6 +86,17 @@
 @media(max-width: 992px) {
     .team {
         padding: 0;
+        padding-bottom: $padding-bottom-small-screens;
+    }
+    .team-header {
+        h1 {
+            font-size: $paragraph-name-small-screens;
+            padding-top: $padding-top-small-screens;
+        }
+    }
+    .team-description {
+        padding-bottom: 0;
+        margin: 0 20px;
     }
 }
 

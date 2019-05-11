@@ -13,10 +13,12 @@
     align-items: center;
     text-transform: uppercase;
     align-content: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
     &:hover {
         background-color: $white-color;
         color: $icons-buttons-color;
-        cursor: pointer;
     }
 }
 

@@ -17,26 +17,13 @@
         }
     }
 }
-.envato {
-    width: 191px;
-    height: 30px;
+.firms,
+.firms-mobile {
+    img.envato {
+        max-height: 30px;
+    }
 }
 
-.wordpress {
-    width: 216px;
-    height: 42px;
-}
-
-.tuts {
-    width: 161px;
-    height: 41px;
-}
-
-.microlancer {
-    width: 197px;
-    height: 42px;
-}
-            
 @media(max-width: 767px) {
 	
 }
@@ -51,9 +38,15 @@
     }
     .firms-mobile {
         display: inline;
+        .firms-logo {
+            img {
+                padding: 0;
+            }
+        }
     }
     .firms-logo:first-child {
         padding-top: $padding-top-small-screens;
+        padding-top: 30px;
     }
 }
 

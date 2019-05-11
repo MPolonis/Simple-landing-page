@@ -30,6 +30,7 @@
         font-weight: $normal-thickness-of-font;
         text-align: center;
         text-decoration: none;
+        text-transform: uppercase;
         cursor: pointer;
         &:hover {
             color: $icons-buttons-color;
@@ -46,7 +47,7 @@
     font-size: 40px;
     letter-spacing: -1px;
     color: $white-color;
-    font-family: $page-font;
+    font-family: $font-noto;
     font-weight: $normal-thickness-of-font;
     text-align: center;
     font-style: italic;

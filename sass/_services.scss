@@ -80,6 +80,7 @@
     font-weight: $normal-thickness-of-font;
     text-align: center;
     margin: 0 auto;
+    line-height: 25px
 }
 
 @media(max-width: 767px) {
@@ -96,6 +97,7 @@
 @media(max-width: 992px) {
 	.particular-service {
         padding-bottom: 40px;
+        padding-top: 30px;
     }
     .particular-service:last-child {
         padding-bottom: 0;

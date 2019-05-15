@@ -1,10 +1,15 @@
 .firms {
     padding: 60px 240px;
-    text-align: center;
-    img {
-        padding: 0 15px;
-    }
 }
+
+.firms-logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        img {
+            padding: 0 30px;
+        }
+    }
 
 .firms-mobile {
     display: none;
@@ -32,26 +37,11 @@
 	
 }
 
-@media(max-width: 1050px) {
+@media(max-width: 950px) {
     .firms {
-        display: none;
-    }
-    .firms-mobile {
-        display: inline;
-        .firms-logo {
-            img {
-                padding: 0;
-            }
-        }
-    }
-    .firms-logo:first-child {
-        padding-top: $padding-top-small-screens;
-        padding-top: 30px;
+        padding: 60px 0;
     }
 }
 
 @media(max-width: 1200px) {
-	.firms {
-        padding: 0 150px;
-    }
 }

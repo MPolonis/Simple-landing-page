@@ -101,6 +101,8 @@
     }
 }
 
-@media(min-width: 1200px) {
-	
+@media(min-width: 993px) and (max-width: 1250px) {
+	.team {
+        padding: 0 50px;
+    }
 }

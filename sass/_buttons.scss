@@ -1,0 +1,51 @@
+.btn {
+    width: 240px;
+    height: 65px;
+    border-radius: 3px;
+    background-color: $icons-buttons-color;
+    font-size: 18px;
+    color: $white-color;
+    font-family: $page-font;
+    font-weight: $thick-font;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    align-content: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    &:hover {
+        background-color: $white-color;
+        color: $icons-buttons-color;
+    }
+}
+
+// button in contact secton
+.btn-message {
+    padding-bottom: 100px;
+}
+
+@media(max-width: 767px) {
+    .btn {
+        height: 40px;
+    }
+    .btn-message {
+        padding: 20px;
+    }
+}
+
+@media(min-width: 768px) {
+	
+}
+
+@media(max-width: 992px) {
+    .team {
+        padding: 0;
+    }
+}
+
+@media(min-width: 1200px) {
+	
+}

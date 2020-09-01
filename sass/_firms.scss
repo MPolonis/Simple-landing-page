@@ -1,0 +1,47 @@
+.firms {
+    padding: 60px 240px;
+}
+
+.firms-logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        img {
+            padding: 0 30px;
+        }
+    }
+
+.firms-mobile {
+    display: none;
+    .firms-logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        img {
+            padding: 0 30px;
+        }
+    }
+}
+.firms,
+.firms-mobile {
+    img.envato {
+        max-height: 30px;
+    }
+}
+
+@media(max-width: 767px) {
+	
+}
+
+@media(min-width: 768px) {
+	
+}
+
+@media(max-width: 950px) {
+    .firms {
+        padding: 60px 0;
+    }
+}
+
+@media(max-width: 1200px) {
+}

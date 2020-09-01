@@ -1,0 +1,120 @@
+.services {
+    width: 100%;
+    font-family: $page-font;
+    text-align: center;
+    padding-bottom: $padding-bottom;
+}
+
+.service-header {
+    margin: 100px;
+    
+    h1 {
+        font-weight: $thick-font;
+        text-transform: uppercase;
+        font-size: $paragraph-name;
+        margin-bottom: 0;
+    }
+    p {
+        font-size: 16px;
+        font-weight: $normal-thickness-of-font;
+        font-style: italic;
+        font-family: $font-noto;
+        color: #777;
+        margin-top: 8px;
+        margin-bottom: 82px;
+    }
+}
+
+.icon {
+    fill: $icons-buttons-color;
+}
+
+.icon-basket {
+    width: 40px;
+    height: 39px;
+}
+
+.icon-laptop {
+    width: 41px;
+    height: 35px;
+}
+
+.icon-locked {
+    width: 29px; 
+    height: 38px;
+}
+
+.service-name {
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 75px;
+    font-family: $page-font;
+    font-weight: $thick-font;
+    margin: 0;
+}
+
+.icon-ring {
+    width: 70px;
+	height: 70px;
+	border: 3px solid $icons-buttons-color;
+	border-radius: 50%;
+    margin: 0 3px;
+    background-color: $white-color;
+    cursor: pointer;
+}
+
+.icon-ring:hover  {
+    background-color: $icons-buttons-color;
+    .icon {
+        fill: $white-color;
+    }
+}
+
+.service-description {
+    width: 279px;
+    height: 58px;
+    font-size: $page-font-size;
+    letter-spacing: 0px;
+    color: #777777;
+    font-family: $font-roboto;
+    font-weight: $normal-thickness-of-font;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+@media(max-width: 767px) {
+    .services {
+        padding-bottom: $padding-bottom-small-screens;
+    }
+	
+}
+
+@media(min-width: 768px) {
+
+}
+
+@media(max-width: 992px) {
+	.particular-service {
+        padding-bottom: 40px;
+        padding-top: 30px;
+    }
+    .particular-service:last-child {
+        padding-bottom: 0;
+    }
+    .services {
+        padding-bottom: 60px;
+    }
+    .service-header {
+        h1 {
+            font-size: $paragraph-name-small-screens;
+        }
+    }
+}
+
+@media(min-width: 1300px) {
+    .services {
+        padding: 0 200px 120px 200px;
+    }
+}
+

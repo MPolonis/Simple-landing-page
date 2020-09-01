@@ -1,0 +1,54 @@
+.icon-btn {
+	width: 41px;
+	height: 41px;
+	border: 0;
+	color: #FFF;
+	border-radius: 20px;
+    border: 3px solid #222;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    font-size: 19px;
+    &:hover {
+        background-color: #222;
+    }
+}
+
+.twitter,
+.facebook,
+.pinterest,
+.google {
+    color: #222;
+    &:hover {
+        color: #f9f9f9;
+    }
+}
+
+.twitter-footer,
+.facebook-footer,
+.pinterest-footer,
+.google-footer {
+    color: #f9f9f9;
+    background-color: #222;
+    &:hover {
+        color: #222;
+        background-color: #f9f9f9;
+    }
+}
+
+@media(max-width: 767px) {
+}
+
+@media(min-width: 768px) {
+	
+}
+
+@media(max-width: 992px) {
+    .social-icons {
+        text-align: center;
+        padding: 0;
+    }
+}
+
+@media(min-width: 1200px) {
+	
+}

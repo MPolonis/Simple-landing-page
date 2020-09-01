@@ -1,0 +1,118 @@
+.contact {
+    background-color: #222;
+    background-image: url('../images/map_image.png');
+    background-repeat: no-repeat;
+    background-position: 700px 130px;
+  
+    .contact-header {
+        text-align: center;
+        font-family: $page-font;
+        h1 {
+            font-weight: $thick-font;
+            text-transform: uppercase;
+            font-size: $paragraph-name;
+            padding-top: $padding-top;
+            margin-bottom: 0;
+            color: $white-color;
+            margin-top: 0;
+        }
+        p {
+            font-size: 16px;
+            font-weight: $normal-thickness-of-font;
+            font-family: $font-noto;
+            font-style: italic;
+            color: #777;
+            margin-top: 8px;
+            margin-bottom: 0;
+            padding-bottom: 84px;
+        }
+    }
+}
+
+.info-area {
+    text-align: right;
+}
+
+.message-area {
+    text-align: left;
+}
+
+.form-contact {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.placeholder-style {
+    width: 455px;
+    height: 50px;
+    border-radius: 2px;
+    background-color: $white-color;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #bbb;
+    font-family: $page-font;
+    font-weight: $thick-font;
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+
+.textarea-contact {
+    margin: 0;
+    padding-top: 10px ;
+    width: 455px;
+    height: 210px;
+}
+
+fieldset {
+    border: none;
+}
+
+@media(max-width: 767px) {
+    
+}
+
+@media(min-width: 768px) {
+	
+}
+
+@media(max-width: 992px) {
+    .contact {
+        background-position: 0 130px;
+        .contact-header {
+            h1 {
+                font-size: $paragraph-name-small-screens;
+                padding-top: $padding-top-small-screens;
+            }
+        }   
+    }
+
+    .placeholder-style {
+        margin-right: 0;
+        width: 300px;
+        height: 30px;
+    }
+
+    .textarea-contact {
+        height: 150px;
+    }
+
+    .form-contact {
+        display: block;
+    }
+
+    .info-area,
+    .message-area {
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
+@media(min-width: 1200px) {
+	
+}

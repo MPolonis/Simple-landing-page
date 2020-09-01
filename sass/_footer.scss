@@ -1,0 +1,40 @@
+.footer {
+    margin: 20px 0;
+
+}
+
+.copyright {
+    font-size: $page-font-size;
+    letter-spacing: 0px;
+    line-height: 22px;
+    color: #555;
+    font-family: $page-font;
+    font-weight: $normal-thickness-of-font;
+    margin-left: 230px;
+}
+
+.social-icons {
+    padding-left: 20px;
+}
+
+@media(max-width: 767px) {
+}
+
+@media(min-width: 768px) {
+	
+}
+
+@media(max-width: 992px) {
+    .copyright {
+        text-align: center;
+        margin: 20px auto;
+    }
+    .social-icons {
+    padding-bottom: 20px;
+    padding-left: 0;
+}
+}
+
+@media(min-width: 1200px) {
+	
+}
